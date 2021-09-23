@@ -52,10 +52,6 @@ response_comment = urlopen(url_comment)
 comment_data = json.loads(response_comment.read())
 
 # Post Functions
-print('The Post data contains :', post_detail(),'\n')
-[print(i) for i in post_get()]
-[print(i) for i in post_bsd_user(int(input('\nEnter the required UserId :')))]
+
 
 # Comment Functions
-[print(i) for i in comment_get()]
-[print(i) for i in  comment_bsd_post(int(input('\nEnter the required postId :')))]
